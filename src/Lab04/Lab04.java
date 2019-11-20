@@ -19,6 +19,19 @@ public class Lab04 {
 
 
         System.out.println("The total is:" + result);
+        alternateMethod(input);
+    }
+
+    // Alkternate method shown by instructor
+    private static void alternateMethod(String input) {
+        String[] items = input.split(" ");
+        int total = 0;
+        for (String item : items) {
+            int num = Integer.parseInt(item);
+            total += num;
+        }
+        System.out.println("Alternate method Solution:" + total);
+
     }
 
     private static int calculator(int result, char operation, int operand) {
